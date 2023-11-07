@@ -1,0 +1,164 @@
+body{
+    margin: 0;
+    font-family:Inter,sans-serif;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.container
+{   
+
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:100px auto;
+    border-radius: 50px;
+    flex-wrap: wrap;
+}
+
+.container-child
+{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.top-child
+{
+    background-color: #6943FF;
+    
+}
+
+.top-child h2{
+    color: white;
+    font-size: 28px;
+    font-family: Inter;
+    font-weight: 800;
+    line-height: 38px;
+    word-wrap: break-word;
+    margin:30px;
+}
+
+#input-el{
+    width: 50px;
+    background-color: transparent;
+    color:#fff;
+    border: 5px solid #B295FF;
+    padding:10px;
+    height: 83px;
+    width: 117px;
+    text-align: center;
+    font-size: 58px;
+    margin-bottom: 20px;
+
+}
+
+#input-el::placeholder
+{
+    color:#fff;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+     -webkit-appearance: none;
+     margin: 0;
+ }
+
+#convert-btn
+{
+    text-align: center;
+    color: #3D3D3D;
+    font-size: 20px;
+    font-family: Inter;
+    font-weight: 500;
+    line-height: 24px;
+    background-color: #fff;
+    padding: 9px 28px;
+    margin-bottom:10px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: #B295FF 2px 4px 5px 5px;
+}
+
+#convert-btn:hover
+{
+    background-color: #6943FF;
+    color:#fff;
+}
+
+#error-message
+{
+    color:#f00;;
+    font-size: 20px;
+    font-weight:bolder;
+ 
+}
+
+
+.bottom-child
+{
+    background-color:#F4F4F4;
+}
+
+.item 
+{
+    width: 500px;
+    height: 110px;
+    background-color: #fff;
+    margin:20px;
+    padding:15px;
+    border-radius: 15px;
+
+}
+
+.item h3
+{
+    color: #5A537B;
+    font-size: 20px;
+    font-family: Inter;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: center;
+}
+
+
+.item p{
+    text-align: center;
+    font-size: 20px;
+    max-width: 400;
+}
+
+
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+}
+
+.bg-light-btn
+{
+    position: absolute;
+    top:40px;
+    right:200px;
+}
+
+.bg-dark-btn
+{
+    position: absolute;
+        color: #fff;
+        top: 40px;
+        right: 160px;
+}
+
+.bg-btn
+{
+    cursor: pointer;
+    color: black;
+}
