@@ -43,6 +43,9 @@ convertBtn.addEventListener("click", function ()
     //  {
     //      errorMessage.innerHTML = "You have to input a number";     
     // }
+    
+     else if (inputEl.value[0] === "-")
+         errorMessage.innerHTML = "You have to input only positive numbers";
      else
      {
         meterToFeet();
@@ -95,7 +98,7 @@ function kmToMph()
 
 backgroundLight.addEventListener("click", function ()
 {
-    changeBackground("white");
+    changeBackground("#fff");
     
 })
 
