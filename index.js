@@ -16,6 +16,24 @@ const favBackgroundColor = [];
 1 km = 0.621 mph
 */
 
+inputEl.addEventListener('input', resizeInput); 
+
+inputEl.oninput = function () {
+    if (this.value.length > 8) {
+        this.value = this.value.slice(0,8); 
+    }
+
+}
+
+
+function resizeInput() {
+    inputEl.style.width = inputEl.value.length + "ch";
+   
+    if (inputEl.value.length === 0)
+    {
+        inputEl.style.width = "3.5ch";
+    }
+}
 
 convertBtn.addEventListener("click", function ()
 {
