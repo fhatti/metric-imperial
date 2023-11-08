@@ -32,18 +32,14 @@ function resizeInput() {
     if (inputEl.value.length === 0)
     {
         inputEl.style.width = "3.5ch";
+        
     }
 }
 
 convertBtn.addEventListener("click", function ()
 {
      if (inputEl.value === "")
-         errorMessage.innerHTML = "You have to input a value";
-    //  else if (typeof inputEl.value === 'string' )
-    //  {
-    //      errorMessage.innerHTML = "You have to input a number";     
-    // }
-    
+         errorMessage.innerHTML = "You have to input a value"; 
      else if (inputEl.value[0] === "-")
          errorMessage.innerHTML = "You have to input only positive numbers";
      else
@@ -53,6 +49,9 @@ convertBtn.addEventListener("click", function ()
         kgtoPounds();
          kmToMph();
          errorMessage.innerHTML = "";
+         inputEl.value = "";
+         inputEl.style.width = "3.5ch";
+         
      }
 })
 
