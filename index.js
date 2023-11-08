@@ -89,7 +89,7 @@ function kmToMph()
 {
     speed.innerHTML =
         `
-         ${inputEl.value} mph = ${(inputEl.value * 0.621).toFixed(0)} mph
+         ${inputEl.value} km = ${(inputEl.value * 0.621).toFixed(0)} mph
         |
         ${inputEl.value} mph = ${(inputEl.value / 0.621).toFixed(0)} km
         `;
